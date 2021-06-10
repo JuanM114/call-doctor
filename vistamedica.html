@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Doctor</title>
+    <link rel="shortcut icon" href="img/logoCallDoctorLetra.png">
+    <link rel="stylesheet" href="/css/vistamedica.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Registro</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="img/logoCallDoctorletra.png" alt="" width="150px" height="65px"></a>
+        <ul>
+            <li><a href="#" class="liIniciarSesion">Iniciar Sesión</a></li>    
+        </ul>
+    </nav>
+    <section class="principal">
+        <h1>Complete los datos</h1>
+        <h4>Estos datos son privados.</h4>
+        <p>
+            <br>
+        (Complete estos datos para poder acceder al
+        servicio de "visita medica" o si ya se encuentra
+        registrado simplemente inicie sesion)
+        </p>
+    </section>
+    <section class="Datos">
+        <img src="img/fondoAboutAzul.png" />
+    </section>
+    <form class="login-form">
+        <p>
+            <select name="Lista" class="selec">
+                <option value="1">Elija la especialidad que le atendera</option>
+                <option value="2">Medico general</option>
+                <option value="3">Optometra </option>
+                <option value="4">Pediatra</option>
+                <option value="5">Pediatra</option>
+
+            </select>
+        </p>
+        <input type="text" class="login-idiomas" autofocus="true" required="true" placeholder="Escriba su nombre" />
+        <input type="text" class="login-idiomas" autofocus="true" required="true" placeholder="Escriba su Apellido" />
+        <input type="text" class="login-idiomas" autofocus="true" required="true" placeholder="Escriba su numero de identificacion" />
+        <input type="tel" class="login-number" autofocus="true" required="true" placeholder="Escriba su numero de celular" />
+        <input type="email" class="login-email" autofocus="true" required="true" placeholder="Escriba su correo" />
+        <input type="password" class="login-email" autofocus="true" required="true" placeholder="Escriba su contraseña" />
+        <div class="checkBox">
+            <input type="checkbox" id="ch1" value="first_checkbox" /><label>Acepto los terminos y condiciones, la
+                politica de privacidad u el
+                tratamiento de datos </label><br>
+            <input type="checkbox" id="ch2" value="second_checkbox" />
+            <label for="cbox2">Confirmo que tengo la autorizacion para crear una cuenta
+            </label>
+        </div>
+        <a href="/continuarregistro.html"><button type="button" class="btnCrearCuenta">Guardar y Continuar</button></a>
+    </form>
+    
+  <!-- inicioSesion--> 
+  <div class="login-box">
+    <section class="form-login form-loginClose">
+        <div class="imglogin">
+            <img src="/img/logoCallDoctor.png" alt="">
+        </div>
+        <img src="/img/iconoX.png" alt="" id="closeLogin">
+         <h3>Bienvenido a CallDoctor</h3>
+          <h5>Inicio de Sesión</h5>
+        <input class="controlsLogin" type="text" name="correo" id="correo" placeholder="Correo">
+        <input class="controlsLogin" type="email" name="crea" id="crea" placeholder="Contraseña">
+        <a href="">¿Olvidaste tu contraseña?</a>
+        <a href="/indexUsuario.html"><button type="button" class="btnInicioSesion"><span></span>Iniciar Sesión</button></a>
+        <p>O</p>
+        <button type="button" class="btnGoogleLogin">Continuar con google</button>
+        <div class="linksRedireccionLogin">
+            <a>¿Aun no te has registrado?</a><br>
+            <a href="#" class="loginRegPaciente">Regístrate como paciente</a><br>o<br>
+            <a href="#">Regístrate como Centro Medico</a>
+        </div>    
+    </section>
+</div>
+<script type="text/javascript">
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+            $('.navbar').addClass('white');
+        } else {
+            $('nav').removeClass('white');
+        }
+    })
+</script>
+<script src="/js/main.js"></script>
+</body>
+
+</html>

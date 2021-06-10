@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medictorio</title>
+    <link rel="shortcut icon" href="img/logoCallDoctorLetra.png">
+    <link rel="stylesheet" href="/css/estilosIndexUsuario.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="principal"><a name="inicio"></a>
+        <nav class="navbar">
+            <a href="" class="logo"><img src="/img/logoCallDoctorLetra.png" alt="" width="150px" height="65px"></a>
+            <ul>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#contactenos">Contactenos</a></li>
+                <li><a href="/usuario.html#inicio" class="iconoUsuario"><img src="img/iconoUsuario.png" alt="" width="40px" height="40px"></a></li>
+                <li><a href="#" class="iconoFlecha"><img src="img/iconoFlecha.png" alt="" width="25px" height="15px"></a>
+                    <ul>
+                        <li><a href="/index.html#inicio">Cerrar Sesión</a></li>
+                    </ul>
+        
+                
+                </li>    
+            </ul>
+        </nav>
+        <section class="contentPrincipal">
+            <h1>Brindamos atención inmediata</h1>
+            <p>de la forma mas rapida posible</p>
+        </section>
+        <nav class="buscador">
+            <ul>
+            <button onclick="location.href='solicitudespaciente.html' "button" class="btnvisita"><img src="img/iconoFormulario.png" alt=""  width="8%" height="100%"> <span></span>Solicitudes Realizadas</button>
+              
+            <button type="button" class="btnllamada"><img src="img/AlarmaEmergencia.png" alt="" width="15%" height="100%"> <span></span> Realizar llamada de emergencia</button>
+            </ul>
+        </nav>
+    </div>
+    <!-- informacion--> 
+    <section class="about"><a name="informacion"></a>
+        <div class="imgAbout"></div>
+        <section class="contentAbout">
+            <h1>Información</a></h1>
+            <h4>LA SALUD NO ES UN JUEGO, <br>
+                MERECEMOS LA MEJOR ATENCIÓN <br> <b> AL MEJOR PRECIO</b></h4>
+            <p>La salud es el aspecto mas importante hasta la actualidad,
+                por eso te brindamos la mejor información, para que nunca
+                sufras por un mal servicio, "El problema no son los
+                establecimientos, el problema es la falta de información"</p>
+        </section>
+    </section>
+    <!-- contactenos--> 
+    <section class="contacto"><a name="contactenos"></a>
+        <div class="titulo">
+            <h1>Contactenos</h1>
+        </div>
+        <div class="texto1">
+            <p>Utilice este formulario para contactarnos <br> sobre sus opiniones sobre medictorio</p>
+        </div>
+        <section class="container">
+            <div class="item_contenido">
+                <input class="nombre" type="text" maxlength="30" placeholder="Nombre" name="nombre">
+                <input class="mail" type="text" maxlength="30" placeholder="Email" name="email">
+                <input class="tel" type="text" maxlength="30" placeholder="Teléfono" name="telephone">
+            </div>
+            <div class="item_left">
+                <textarea name="comentarios"  placeholder="Apreciamos siempre tu opinión"></textarea> <br>
+                <button type="button" class="btnEnviar">Enviar</button>
+            </div>
+        </section>
+    </section>
+
+        </section>
+    </section>
+
+
+    <script type="text/javascript">
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('.navbar').addClass('white');
+            } else {
+                $('nav').removeClass('white');
+            }
+        })
+    </script>
+</body>
+
+</html>

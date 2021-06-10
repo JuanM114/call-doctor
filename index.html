@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Doctor</title>
+    <link rel="shortcut icon" href="img/logoCallDoctorLetra.png">
+    <link rel="stylesheet" href="/css/estilosInicio.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+</head>
+
+<body>
+    <!-- inicio--> 
+    <div class="principal" id="principal"><a name="inicio"></a>
+        <nav class="navbar">
+            <a href="#inicio" class="logo"><img src="img/logoCallDoctorletra.png" alt="" width="150px" height="65px"></a>
+            <ul>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#contactenos">Contactenos</a></li>
+                <li><a href="#" class="liIniciarSesion">Iniciar Sesión</a></li>
+                <li><a href="#">Registrarse</a>
+                    <ul>
+                        <li><a href="#" class="RegPaciente">Como Paciente</a></li>
+                        <li id="btnRegistroCentroMedico"><a href="#" class="RegCentroMed">Como Doctor</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section class="contentPrincipal">
+            <h1>Brindamos atención inmediata</h1>
+            <p>de la forma mas rapida posible</p>
+        </section>
+        <nav class="buscador">
+            <ul>
+                <button onclick="location.href='vistamedica.html' "button" class="btnvisita"><img src="img/logoCallDoctor.png" alt=""  width="12%" height="80%"> <span></span> Visita medica</button>
+                
+                <button type="button" class="btnllamada"><img src="img/AlarmaEmergencia.png" alt="" width="12%" height="80%"> <span></span> Realizar llamada de emergencia</button>
+            </ul>    
+        </nav>
+      
+    </div>
+    <!-- informacion--> 
+    <section class="about"><a name="informacion"></a>
+        <div class="imgAbout"></div>
+        <section class="contentAbout">
+            <h1>Información</a></h1>
+            <h4>LA SALUD NO ES UN JUEGO, <br>
+                MERECEMOS LA MEJOR ATENCIÓN <br> <b> AL MEJOR PRECIO</b></h4>
+            <p>La salud es el aspecto mas importante hasta la actualidad,
+                por eso te brindamos la mejor información, para que nunca
+                sufras por un mal servicio, "El problema no son los
+                establecimientos, el problema es la falta de información"</p>
+        </section>
+    </section>
+    <!-- contactenos--> 
+    <section class="contacto"><a name="contactenos"></a>
+        <div class="titulo">
+            <h1>Contactenos</h1>
+        </div>
+        <div class="texto1">
+            <p>Utilice este formulario para contactarnos <br> sobre sus opiniones sobre medictorio</p>
+        </div>
+        <section class="container">
+            <div class="item_contenido">
+                <input class="nombre" type="text" maxlength="30" placeholder="Nombre" name="nombre">
+                <input class="mail" type="text" maxlength="30" placeholder="Email" name="email">
+                <input class="tel" type="text" maxlength="30" placeholder="Teléfono" name="telephone">
+            </div>
+            <div class="item_left">
+                <textarea name="comentarios"  placeholder="Apreciamos siempre tu opinión"></textarea> <br>
+                <button type="button" class="btnEnviar">Enviar</button>
+            </div>
+        </section>
+    </section>
+    <!-- RegistroPaciente--> 
+    <div class="RegPaciente-box">
+        <section class="form-registerPaciente form-registerPacienteClose">
+            <div class="imgRegistroPaciente">
+                <img src="/img/logoCallDoctor.png" alt="">
+            </div>
+            <img src="/img/iconoX.png" alt="" id="close">
+            <h3>Bienvenido a Call Doctor</h3>
+            <h5>Regístrese como paciente</h5>
+            <input class="controls" type="text" name="correo" id="correo" placeholder="Ingrese su Correo">
+            <input class="controls" type="text" name="usuario" id="usuario" placeholder="Ingrese su Nombre Completo">
+            <input class="controls" type="email" name="crea" id="crea" placeholder="Crea una Contraseña">
+            <input class="controls" type="password" name="reactificar" id="reactificar" placeholder="Rectificar Contraseña">
+            <a href="/usuario.html"><button type="button" class="btnRegistro"><span></span>Registrarme</button></a>
+            <p>O</p>
+            <button type="button" class="btnGoogle">Continuar con google</button>
+            <a href="#">¿Ya te registraste? Inicia sesión</a>
+        </section>
+    </div>  
+    <!-- inicioSesion--> 
+    <div class="login-box">
+        <section class="form-login form-loginClose">
+            <div class="imglogin">
+                <img src="/img/logoCallDoctor.png" alt="">
+            </div>
+            <img src="/img/iconoX.png" alt="" id="closeLogin">
+            <h3>Bienvenido a CallDoctor</h3>
+            <h5>Inicio de Sesión</h5>
+            <input class="controlsLogin" type="text" name="correo" id="correo" placeholder="Correo">
+            <input class="controlsLogin" type="email" name="crea" id="crea" placeholder="Contraseña">
+            <a href="">¿Olvidaste tu contraseña?</a>
+            <a href="/indexUsuario.html"><button type="button" class="btnInicioSesion"><span></span>Iniciar Sesión</button></a>
+            <p>O</p>
+            <button type="button" class="btnGoogleLogin">Continuar con google</button>
+            <div class="linksRedireccionLogin">
+                <a>¿Aun no te has registrado?</a><br>
+                <a href="#" class="loginRegPaciente">Regístrate como paciente</a><br>o<br>
+                <a href="#">Regístrate como Centro Medico</a>
+            </div>    
+            </section>
+    </div>
+    <!-- RegistroDoctor--> 
+    <div class="RegCentroMed-box">
+        <section class="form-registerCentroMed form-registerCentroMedClose">
+            <div class="imgRegistroCentroMed">
+                <img src="/img/logoCallDoctor.png" alt="">
+            </div>
+            <img src="/img/iconoX.png" alt="" id="closeRegCentroMEd">
+            <h3>Bienvenido a Call Doctor</h3>
+            <h5>Registrese como Doctor</h5>
+            <input class="controlsRegCentroMED" type="text" name="NombreCentroMed" id="NombreCentroMed" placeholder="Correo   ">
+            <input class="controlsRegCentroMED" type="text" name="NombreCentroMed" id="NombreCentroMed" placeholder="Nombre Completo">
+            <input class="controlsRegCentroMED" type="text" name="NombreCentroMed" id="NombreCentroMed" placeholder="Crea una Constraseña">
+            <input class="controlsRegCentroMED" type="text" name="NombreCentroMed" id="NombreCentroMed" placeholder="Rectificar Contraseña">
+            <a href="/RegistroCentroMedico.html"><button type="button" class="btnRegCentroMed"><span></span>Registrarme</button></a>
+            <p>O</p>
+            <button type="button" class="btnGoogleDoctor">Continuar con google</button>
+            <div class="linksRedireccionRegCentroMed">
+                <a href="#">¿Ya te registraste? Inicia sesión</a><br>
+            </div>    
+            </section>
+    </div>
+   <!-- boton hamburguesa--> 
+   <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+    <label for="abrir-cerrar" class="toggle-button">
+        <span class="cerrar" title="Cerrar">Cerrar</span>
+        <span class="abrir" title="Abrir">Abrir</span>
+    </label>
+ <!--scrip de los menus-->
+    <script type="text/javascript">
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('.navbar').addClass('white');
+            } else {
+                $('nav').removeClass('white');
+            }
+        })
+    </script>
+    <script src="/js/main.js"></script>
+  
+</body>
+
+</html>

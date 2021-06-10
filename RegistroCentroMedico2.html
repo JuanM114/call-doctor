@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/RegistroCentroMedico2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/index.html"><img src="img/logoCallDoctorLetra.png" /></a>
+    </nav>
+    <section class="foto">
+        <img src="/img/camara1.jpeg" alt="">
+    </section>
+    <div class="estrellas">
+        <p class="empresa">*NOMBRE DEL MEDICO*</p>
+        <p class="valor">Valoración :</p>
+        <form action="" method="post">
+            <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="5"><label for="radio1">&#9733;</label><input
+                    id="radio2" type="radio" name="estrellas" value="4"><label for="radio2">&#9733;</label><input
+                    id="radio3" type="radio" name="estrellas" value="3"><label for="radio3">&#9733;</label><input
+                    id="radio4" type="radio" name="estrellas" value="2"><label for="radio4">&#9733;</label><input
+                    id="radio5" type="radio" name="estrellas" value="1"><label for="radio5">&#9733;</label>
+            </p>
+        </form>
+    </div>
+    <div class="slider">
+        <div class="carrusel"><img src="/img/camara1.jpeg" style="width: 100%; height: 100%;"></div>
+        <div class="carrusel"><img src="/img/camara2.jpeg" style="width: 100%; height: 100%;"></div>
+        <div class="carrusel"><img src="/img/camara3.jpeg" style="width: 100%; height: 100%;"></div>
+        <div class="carrusel"><img src="/img/camara4.jpeg" style="width: 100%; height: 100%;"></div>
+    </div>
+    <!-- flechas con texto unicode &#10094-->
+    <div class="flechas">
+        <a class="anterior" onclick="flechas(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="70"fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd"d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" /></svg></i></a>
+        <a class="siguiente" onclick="flechas(1)"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="70"fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd"d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" /></svg></a>
+    </div>
+    <div class="botones" style="text-align:center">
+        <p class="boton" onclick="diapositivaActual(1)"></p>
+        <p class="boton" onclick="diapositivaActual(2)"></p>
+        <p class="boton" onclick="diapositivaActual(3)"></p>
+        <p class="boton" onclick="diapositivaActual(4)"></p>
+    </div>
+    <div class="descripcion">
+        <textarea name="comentarios" rows="10" cols="160" placeholder="DESCRIPCIÓN DE SU CENTRO MEDICO"></textarea>
+    </div>
+
+    <section class="container">
+        <div class="item left" >
+            <input class="ciudad" type="text"  placeholder="Ciudad" name="city" style="width: 400px; height: 30px" >
+            <input class="ubicacion" type="text"  placeholder="Ubicación" name="direccion" style="width: 400px; height: 30px">
+        </div>
+        <div class="item contenido" >
+                <input class="correo" type="text"  placeholder="Correo del centro medico" name="email" style="width: 400px; height: 30px">
+                <input class="telefono" type="text" placeholder="Telefono o telefonos del centro medico" name="telefono" style="width: 400px; height: 30px">         
+            </div>
+        </section>
+        <section class="desplegables">
+            <div class="item caja1" >
+                <select class="espec" >
+                    <p class="barraspec">
+                    <option selected="yes" disabled="">Especialidad </option>
+                    <option>Odontologia </option>
+                    <option>Endodoncia</option>
+                    <option>Cirugia Maxilofacial</option>
+                </select>
+            </div>
+            <div class="item caja2">
+                <select class="espec2">
+                    <p class="barraspec2">
+                    <option selected="yes" disabled="">Servicios </option>
+                    <option>Calzas </option>
+                    <option>Lo que sea</option>
+                    <option>Lo que sea</option>
+                </select>
+            </div>     
+        </section>
+       
+    <script src="/js/RegistroCentroMedico2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logoCallDoctor.png">
+    <title>Medictorio</title>
+    <link rel="stylesheet" href="/css/estilosUsuario.css">
+</head>
+<body>
+    <div class="principal"><a name="inicio"></a>
+        <nav class="navbar">
+            <a href="/indexUsuario.html#inicio" class="logo"><img src="/img/logoCallDoctorLetra.png" alt="" width="150px" height="65px"></a>
+            <ul>
+                <li><a href="/indexUsuario.html#informacion">Información</a></li>
+                <li><a href="/indexUsuario.html#contactenos">Contactenos</a></li>
+                <li><a href="#" class="iconoUsuario"><img src="img/iconoUsuario.png" alt="" width="40px" height="40px"></a></li>
+                <li><a href="#" class="iconoFlecha"><img src="img/iconoFlecha.png" alt="" width="25px" height="15px"></a>
+                    <ul>
+                        <li><a href="index.html">Cerrar Sesión</a></li>
+                    </ul>
+                </li>    
+            </ul>
+        </nav> 
+        <section class="contentPrincipal">
+            <img src="/img/iconoUsuario.png" alt="" width="180px" height="180px">
+            <input type="file" id="avatar" name="avatar"accept="image/png, image/jpeg">
+            <h2>*Nombre usuario*</h2>
+            <h4>Actualice estos datos para un mejor servicio</h4>
+        </section>
+        <section class="datos_usuario">
+            <div class="inputs">
+                <ul>
+                    <li><input type="text" name="idioma" placeholder="Genero" id="genero"
+                            list="generoList" ></li>
+                    <datalist id="generoList">
+                        <option value="Masculino"></option>
+                        <option value="Femenino"></option>
+                        <option value="Otro"></option>
+                        
+                    </datalist>
+                </ul>  
+            <input class="tel" type="tel" maxlength="30" placeholder="Celular" name="celular">
+            <input class="number" type="number" maxlength="30" placeholder="Peso" name="peso">
+            <input class="number" type="number" maxlength="30" placeholder="Estatura" name="estatura">
+            <input class="number" type="number" maxlength="30" placeholder="Edad" name="edad">
+            </div>
+            <div class="textareas">
+            <textarea class="textarea" type="textarea" maxlength="30" placeholder="Tiene Enfermedades Previas, ¿Cuales?" name="enfermedades_previas"></textarea>
+            <textarea class="textarea" type="textarea" maxlength="30" placeholder="Presenta Alegria a medicamentos, ¿Cuales?" name="alegria_medicamentos"></textarea>
+            <textarea class="textarea" type="textarea" maxlength="30" placeholder="Si usted tiene Cirugias con anterioridad, ¿Cuales son?" name="cirugias_previas"></textarea>
+            </div>
+            <a href="#"><button type="button" class="btnActualizar"><span></span>Actualizar Datos</button></a>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('.navbar').addClass('white');
+            } else {
+                $('nav').removeClass('white');
+            }
+        })
+    </script>
+</body>
+</html>

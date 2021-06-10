@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Doctor</title>
+    <link rel="shortcut icon" href="img/logoCallDoctorLetra.png">
+    <link rel="stylesheet" href="/css/continuarregistro.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Registro</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="img/logoCallDoctorletra.png" alt="" width="150px" height="65px"></a>
+        <ul>
+            <li><a href="#" class="liIniciarSesion">Iniciar Sesión</a></li>    
+    
+            <li><a href="#" class="liIniciarSesion">Agregar Nueva ubicación</a></li>    
+        </ul>
+    </nav>
+    <section class="principal">
+        <h1>Complete los datos</h1>
+        <h4>Estos datos son privados.</h4>
+        <p>
+            <br>
+        (Complete estos datos con su direccion y/o 
+        indicaciones <p>para hacer mas rapida la llegada
+        de su doctor)</p>
+        </p>
+    </section>
+    <section class="Datos">
+        <img src="img/iconoUbicacion.png" />
+    </section>
+    <form class="login-form">
+        <p>
+            <select name="Lista" class="selec">
+                <option value="1">Elija su ciudad</option>
+                <option value="2">Popayán</option>
+                <option value="3">Cali </option>
+                <option value="4">Medellin</option>
+                <option value="5">Bogota</option>
+
+            </select>
+        </p>
+        <input type="text" class="login-idiomas" autofocus="true" required="true" placeholder="Escriba direccion" />
+        <input type="text" class="login-idiomas" autofocus="true" required="true" placeholder="Nombre direccion(casa, oficina, etc...)" />
+        <input type="text" class="login-idiomas" autofocus="true" required="true" placeholder="Barrio/indicaciones(casa, apartamento, etc..)" />
+        <input type="tel" class="login-number" autofocus="true" required="true" placeholder="Escriba su numero de contacto" />
+       
+        <div class="checkBox">
+            <input type="checkbox" id="ch1" value="first_checkbox" /><label>Acepto los terminos y condiciones, la
+                politica de privacidad u el
+                tratamiento de datos </label><br>
+           
+        </div>
+        <a href="/RegistroCentroMedico2.html"><button type="button" class="btnCrearCuenta">Guardar y Continuar</button></a>
+    </form>
+    <!-- calendario--> 
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%2333B679&amp;ctz=America%2FBogota&amp;src=aGRwcTV1ajAzODF1Mjc2MWQ0bG5sMWo5aDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F4511E&amp;title=%C2%BFCu%C3%A1ndo%20necesitas%20el%20servicio%3F" style="border:solid 1px #777" width="600" height="500" frameborder="0" scrolling="no"></iframe>
+  <!-- inicioSesion--> 
+  <div class="login-box">
+    <section class="form-login form-loginClose">
+        <div class="imglogin">
+            <img src="/img/logoCallDoctor.png" alt="">
+        </div>
+        <img src="/img/iconoX.png" alt="" id="closeLogin">
+         <h3>Bienvenido a CallDoctor</h3>
+          <h5>Inicio de Sesión</h5>
+        <input class="controlsLogin" type="text" name="correo" id="correo" placeholder="Correo">
+        <input class="controlsLogin" type="email" name="crea" id="crea" placeholder="Contraseña">
+        <a href="">¿Olvidaste tu contraseña?</a>
+        <a href="/indexUsuario.html"><button type="button" class="btnInicioSesion"><span></span>Iniciar Sesión</button></a>
+        <p>O</p>
+        <button type="button" class="btnGoogleLogin">Continuar con google</button>
+        <div class="linksRedireccionLogin">
+            <a>¿Aun no te has registrado?</a><br>
+            <a href="#" class="loginRegPaciente">Regístrate como paciente</a><br>o<br>
+            <a href="#">Regístrate como Centro Medico</a>
+        </div>    
+    </section>
+</div>
+<script type="text/javascript">
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+            $('.navbar').addClass('white');
+        } else {
+            $('nav').removeClass('white');
+        }
+    })
+</script>
+<script src="/js/main.js"></script>
+</body>
+
+</html>
